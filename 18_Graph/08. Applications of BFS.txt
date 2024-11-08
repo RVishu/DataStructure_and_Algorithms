@@ -1,0 +1,10 @@
+
+APPLICATION OF BFS
+    - Shortest Path in an unweighted GRAPH
+    - Crawler in Search Engine
+    - Peer to Peer Network
+    - Social Networking Search
+    - In Garbage Collection (cheney's Algorithm)
+    - Cycle Detection
+    - Ford Fulkerson Algorithm
+    - Broadcasting

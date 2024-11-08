@@ -1,0 +1,30 @@
+TYPICAL STRUCTURE OF RECURSIVE FUCTION
+
+.....(return type ) fun (.....)
+{
+    Base Case
+    .........
+
+    Recursive call(i.e call to fun() )
+    with at least one change in parameter.
+    .........
+}
+
+
+//  any programme which can be programmed using ITERATION can also be programmed using RECURSION and vice-versa.
+
+02_//
+
+APPLICATION OF RECURSION
+
+(1) many algorithms techniques are based on RECURSION
+
+--> DYNAMIC PROGRAMMING
+--> BACKTRACKING
+-->DIVIDE AND CONQUER (binary search,quick sort, and merge sort)
+
+
+(2)  many problems inherently Recursive
+--> tower of hanoi
+--> DFS based traverials(DFS of graph and Inorder/Preorder/Pastorder traverial of tree)
+

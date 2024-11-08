@@ -1,0 +1,21 @@
+ 1- calculate ratio(value/weight) for every item.
+ 2- sort all item in decreaasing order of the ratio.  // O(nlogn)
+ 3-initialize: res=0,curr_cap=given_cap;
+
+ 4- do following for every item I in sorted order. // O(n)
+    (a)- Else if(I.weight <= curr_cap)
+        {
+            curr_cap-= I.weight
+            res += I.value;
+        }
+
+    (b) Else 
+        {
+            res +=(I.value)*(curr_cap/I.weight)
+            return res;
+        }    
+ 5- return res;       
+
+
+
+ OVERALL TIME COMPLEXICITY : O(nlogn)

@@ -1,0 +1,12 @@
+DAG- Directed Acyclic Graph
+O(V+E)
+
+
+shortestapth(adj,s)
+    1-initialize dist[v]={INF,INF,...,INF}
+    2-dist[s]=0
+    3-find a topological sort of the graph
+    4-for every vertex u in the topological sort    
+        a-for every adjacent v of u 
+            if dist[v]>dist[u] + weight(u,v)
+                dist[v]= dist[u]+weight(u,v)

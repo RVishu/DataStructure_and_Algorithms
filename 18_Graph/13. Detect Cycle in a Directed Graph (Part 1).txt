@@ -1,0 +1,36 @@
+/* Undirected graph cycle detection will not work here
+
+DFS based solution
+
+
+descendent to ancenstors --> there is a cycle (such edges as BACK EDGES)
+*/
+
+DFSRec(adj,s,visted[],recST[])   // recSt == recursive stack
+{
+    visited[s]=true;
+    recST[s]=true
+
+    for every adjacent u of s
+    {
+        if (visited[u]==false && DFSRec(adj,u,visited,recST))
+            return true;
+        else if (recST[u]==true)
+             return true;
+
+    }
+    recST[s]=false;
+    return false;
+}
+
+DFS(adj,V)
+{
+    visited[V]= {false,false,false,...,false}
+    recST[V]={false,false,false,...,false}
+
+    for(int i=0;i<V;i++)
+        if(visted[i]==false)
+            if(DFSRec(adj,i,visited,recST)==true)
+                return true;
+    return false;
+}

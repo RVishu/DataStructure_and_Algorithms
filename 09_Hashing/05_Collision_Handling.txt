@@ -1,0 +1,14 @@
+
+if we know keys in advance , then we can PERFECT HASHING (which gurantee NO collision)
+
+if we do not know keys ,then we use one of the following
+        - chaining
+        - open addressing
+            - linear probling
+            - quadratic probling
+            - double hashing
+
+BIRTHDAY PARADOX 
+    - 23 -> 50%
+    - 70 -> 99.9%
+    

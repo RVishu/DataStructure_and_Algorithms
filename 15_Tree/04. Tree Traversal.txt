@@ -1,0 +1,9 @@
+tree traversal - printing every node exactly once
+
+2 Categories of tree traversal
+ - breadth first(OR level order)
+ -Depth first
+        -Inorder  [left-Root-Right]
+        -PreOrder [Root-left-Right]
+        -Postorder [left-right-Root]
+         

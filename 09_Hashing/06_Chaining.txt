@@ -1,0 +1,35 @@
+// first method of collision handling--> CHAINING
+
+hash(key)= key%7  ( 7 because n=6 , so 7 is greater than 6 and close to 6 and alsso PRIME)
+
+Hash Tables are (ARRAY OF LINKED LIST HEADORS)
+
+with same reminder we add NODE to LINKED LIST
+
+PERFORMANCE
+    m= No. of Slots in Hash Tables
+    n= No. of Keys to be inserted
+
+    Load factor (alpha) = n/m
+
+    expected chain length = alpha
+
+    expected time to search = O(1+ alpha) // 1 for hash function computaion + traversing through chain
+
+    expected time to Insert/Delete = O(1+alpha)
+
+DATA STRUCTURES TO STORE CHAINS
+
+    - Linked List  , Search O(l), Delete O(l) also Insert  , l = lenth of chain
+      it is not cache friendly bcz Nodes are at different location
+      it requires extra sapce for storing  references and Pointers
+
+    - Dynammic Sized Arrays (Vector in C++)   , , Search O(l), Delete O(l) also Insert  , l = lenth of chain
+     they are Cache friendly (bcz of Continuos Location)
+
+    - Self Balancing BST (AVL Tree , Red Black Tree)
+      it takes O(log l) for all 3 operations 
+    but they are Not Cache Friendly
+
+
+    

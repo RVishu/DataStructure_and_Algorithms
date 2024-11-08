@@ -1,0 +1,5 @@
+1- to maintain sorted stream of data (or sorted set of data)
+2-to implement doubly ended priority queue
+3-to solve problems like 
+    a-count smaller/greater in a stream
+    b- floor/ceiling/greater/smaller in a stream

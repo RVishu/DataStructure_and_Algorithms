@@ -1,0 +1,25 @@
+adjacent List : it stores value only whivh are connected
+    - we only store vertices which are adjacent to it.
+
+An array of lists where
+
+lists are most popular represented as:
+    - Dynamic Sized Arrays
+    - Linked lists
+
+Space : theta (V+E) 
+    - undirected  - (V+2*Edge)
+    - directed  - (V + E)
+
+
+Operations:
+
+check if there is an edge from u to v : O(v)
+
+find all adjacent of u : theta(degree(u))
+
+find degree of u : theta(1)
+
+Add on Edge : theta(1)
+
+Remove an Edge : O(v)

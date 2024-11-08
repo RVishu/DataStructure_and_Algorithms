@@ -1,0 +1,29 @@
+Given a weighted graph and a source ,
+find the shortest distance from source to all other vertices
+
+
+INTERSTING FACTS-
+    -it doesn't work for negative weight edges
+    - does the shortest path change if add a weight to all
+        edges of the original graph?  -> YES
+
+
+Implementation
+
+1- Create Empty Priority Queue(Or Min Heap),pq
+2-dist[V] = {INT_MAX,INT_MAX,INT_MAX,...,INT_MAX}
+3-dist[s]=0
+4-Insert all distance into pq.  // O(V)
+5-While(pq.empty()==false)
+    {
+        u=pq.extractMin();  //O( logV)
+        relax all adjacent of u that are not in pq //O(logV)
+    }
+
+    // overall time complexity= O[ VlogV + ElogV ]
+
+
+    this is for both directed and Undirected graph
+    No requirement like  directed and Acyclic it woe'll run for both graph may also contains cycle
+
+ LIMITATION/DRAWBACK- Not work for Negative Weight edge   

@@ -1,0 +1,47 @@
+BELLMAN FORD ALGORITH(It's a Dynamic Programming Algorithm) - this will work for negative weight edges
+
+SINGLE SOURCE  && SHORTEST PATH
+
+relax function -
+        if( d[v]>d[u]+weight(u,v))
+            d[v]=d[u]+weight(u,v)
+
+
+IDEA: we first find shortest paths that are of 
+        of edge length . then shortest paths
+        that are of two edge length and so on.
+
+Algorithm : We relax all edges V-1 times        
+
+
+d[v]={INT_MAX,INT_MAX,...,INT_MAX}   // O(VE) --> for complete graph where E=theta(V2) then O(V3)
+
+d[s]=0
+for(count=0;count<(V-1);count++)
+    for every edge(u,v)
+        {
+            if( d[v]>d[u]+weight(u,v))
+            d[v]=d[u]+weight(u,v)
+        }
+
+
+
+why we iterate V-1 times --> bcz at straight path its V-1 (that's the worst case)
+
+- HOW DOES IT HANDLE Negative WEIGHT CYCLES?
+-->
+d[v]={INT_MAX,INT_MAX,...,INT_MAX}   // O(VE) --> for complete graph where E=theta(V2) then O(V3)
+
+d[s]=0
+for(count=0;count<(V-1);count++)
+    for every edge(u,v)
+        {
+            if( d[v]>d[u]+weight(u,v))
+            d[v]=d[u]+weight(u,v)
+        }
+
+for every edde(u,v)
+    if(d[v]>d[u]+weight(u,v))
+        print("Negative Weight cycle Found");
+
+IT ALSO REPORT NEGATIVE WEIGHT CYCLES

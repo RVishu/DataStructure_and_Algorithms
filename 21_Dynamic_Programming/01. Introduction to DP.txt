@@ -1,0 +1,18 @@
+ optiimizaation over plain recursion
+
+ here we are given a problem of input size =n
+ we use sub-problem solution when there are Overlapping of sub-problems
+
+
+ THER ARE 2 WAYS TO IMPLEMENTATE DYNAMIC PROGRAMMING
+    1- memoization (Top Down)
+    2-tabulation    (Bottom Up)
+
+
+
+APPLICATION
+    1-bellman Ford Algorithm
+    2-Floyd Warshall Algorithm
+    3-Diff utility (LCS== Longest Common Subsequenc)
+    4-Search closed words
+    5-Resource Allocation (0-1 Knapsack)

@@ -1,0 +1,12 @@
+//stack operations
+    
+    isEmpty() : return true if stack is empty , else false
+    push(x) : insert an item to the top of the stack
+    pop() : removes an item from the top
+    peek() : return the top item
+    size() : return the size of stack 
+
+
+Underflow : when pop() or peek() called on empty stack.
+
+Overflow: when push called on a full stack.

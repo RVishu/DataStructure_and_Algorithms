@@ -1,0 +1,17 @@
+C++
+    -int arr[100]
+    -int arr[n] // where n is an interger
+    -int *arr = new int[n];
+    -vector<int> v;
+ -> Problem with Arrays
+    -either size is fixed and pre-alloted(in both fixed and variable sized arrays)
+        , OR the worst case insertion at the end is theta(n)
+    -insertion in the middle(or beginning ) is costly.
+    - deletion from the middle (or beggining) is costly
+    -implementation of data structure like queue and deques is complex with arrays
+
+-> Problem with Arrays.
+    1- How to implement round robin scheduling
+    2- given a sequence of items .whenever we see an item x in the 
+        sequence , we need to replace it with 5 instances of another item y. 
+    3- we have multiple sorted sequences and we need merge them frequently.    

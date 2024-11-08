@@ -1,0 +1,41 @@
+/*
+
+DOUBLE HASHING  
+    hash(key,i) = (h1(key)+ih2(key)) % m
+
+        - if h2 (key) is relatively prime to m, then it always find a free slot if there is one.
+        - distributes keys more uniform than Linear Probing and Quadratic hashing
+        - No clustering
+
+
+m=7
+h1(key)=(key%7)
+h2(key)=6-(key%6)    --> h2 should never return 0    
+
+Why h2(key) and m shoud be relatively prime.
+
+*/
+
+#include <bits/stdc++.h>
+using namespace std;
+
+void doubleHashingInsert(int key)
+{
+    if(table is full )
+    return error;
+
+    probe=h1(key),offset=h2(key);
+    while(table[probe]is occupied)
+    probe = (probe + offset)%m;
+    table[probe]=m;
+
+}
+
+PERFORMANCE ANALYSIS OF SEARCH
+alpha = n/m (should be <=1)
+
+Assumption : Every Probe sequence looks at random location
+
+(1-alpha) fraction of the table is Empty
+Expected no. of Probes Required = 1/(1-alpha)
+

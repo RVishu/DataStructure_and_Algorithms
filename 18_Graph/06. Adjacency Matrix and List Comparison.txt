@@ -1,0 +1,31 @@
+List
+
+    -memory - theta(V+E)
+
+    -check if there is an edge from u to v  - O(V)
+
+    -find all adjacent of u - theta(degree(u))
+
+    -Add an Edge - theta(1)
+
+    - Remove an Edge - O(v)
+
+MATRIX
+
+    -memory - theta(V*V)
+
+    -check if there is an edge from u to v  - theta(1)
+
+    -find all adjacent of u - theta(v)
+
+    -Add an Edge - theta(1)
+
+    - Remove an Edge - theta(1)
+
+
+ UNDIRECTEDD
+    0 <= E <= [V*(V-1)]/2
+
+DIRECTED 
+    0 <= E <= V(*V-1)
+

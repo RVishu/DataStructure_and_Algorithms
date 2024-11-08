@@ -1,0 +1,11 @@
+RED-BLACK TREE
+
+1-every node is either black or RED
+2-root is always black
+3-no two consecutives RED
+4- number of black nodes from every
+    node to all of its descandant leaves should be same
+
+5- no. of nodes on the path from a node to its farthest descendant leaf
+    should not be more than TWICE than the no. of nodes on the path to its
+    closest descandant leaf.    

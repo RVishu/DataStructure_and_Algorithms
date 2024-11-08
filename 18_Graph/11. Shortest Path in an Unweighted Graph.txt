@@ -1,0 +1,20 @@
+ we will be using BFS 
+
+ 1- initialize dist[v]= {INF,INF,INF,....INF}
+ 2- dist[s]=0
+ 3-create a queue, q
+ 4- initialize : visited[v]={false,false......false}
+ 5- q.push(s) , visited[s]=true
+ while(q is not empty)
+ {
+    u=q.pop()
+    for every adjacent v of u
+    {
+        if(visited[v]==false)
+        {
+            dist[v]=dist[u]+1
+            visited[v]=true
+            q.push(v)
+        }
+    }
+ }

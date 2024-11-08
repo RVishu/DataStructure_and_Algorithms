@@ -1,0 +1,12 @@
+we are given a directed graph,
+we need to find all the strongly conncected componenet in it
+
+Strategy - if we go backward  or say Sink(last) to Source(src)
+
+
+1- Order the vertices in decreasing order of finish times in DFS
+
+2-Reverse all edges
+
+3- Do DFS of the Reversal graph in the order obtained in sstep 1
+    for every vertex,print all reachable vertices as one strongly Connected componenet

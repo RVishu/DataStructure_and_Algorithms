@@ -1,0 +1,18 @@
+
+OVERVIEW OF PATTERN SEARCHING 
+    m-pattern length
+    n-txt length
+    1<=m<=n
+
+NAIVE : O((n-m+1)*m)            NO PREPROSESSING
+
+naive when all characters of pattern are distinct : O(n)
+
+
+RABIN KARP:O((n-m+1)*m)         PREPROCESS PATTERN
+    BUT better than Naive on average
+KMP: O(n)    
+
+
+
+Suffix True:O(m)                PREPROCESS TEXT

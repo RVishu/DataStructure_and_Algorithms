@@ -1,0 +1,36 @@
+// we'll use the idea of Topological Sort
+
+
+1- we create a empty stack ,st
+
+2- for every vertext u 
+    we'll doing the following operation 
+        if(u is not visited)
+            DFS(u,st)
+3-while(st is not empty)
+    pop an item and add to result
+
+
+DFS(u,adj)
+    a-mark u as visited
+    2-for every adjacent v 
+        if(v is not visited)
+            DFS(v,st)
+    3- st.push()        
+
+if we have adjacency list representaion then
+    step 1- DFS or topological sort step   // O(V+E)  ( it ensures that we go from sink side to source side)
+    step 2- find transpose of graph  // O(V+E)
+    step 3- also DFS to print all st elemetns  // O(V+E)
+
+    Overall Time Complexity == O(V+E)
+
+
+    but still this is not best for finding the strongly conncected components
+
+        there is Tarjan's Algorithm
+
+
+
+QUES- why not wwe start from last ( or why we even need second step)
+ANS- when we reverese graph , then strongly conncected remains strongly conncected

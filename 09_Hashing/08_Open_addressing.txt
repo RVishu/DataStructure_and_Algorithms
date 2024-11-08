@@ -1,0 +1,33 @@
+/*
+open address is another way of handling collisions--> it uses single array only , not form any chains of any data structure
+    - No. of slots in hash table >= No. of keys to be inserted
+    - it is Cache friendly 
+    - Linear probing= Linerarly searching for next Empty Slot , when there is a Collision.
+        = we Linerarly search in Circular manner
+*/      
+
+/*
+HOW SEARCH FUNCTION WORKS IN OPEN addressing
+
+    - we compute hash Function
+    - we go to that index and compare.
+    -if we find = we return true.
+        otherwise = we linearly search 
+            -> we stop wwhen one of the 3 cases arise.
+                (1)- empty slot    {Return False}
+                (2)- key found     {Return true}
+                (3)- traversed through the whole hash Table.   {Return False}
+*/
+
+/*
+PRIMARY CLUSTERING (a problem with linear probing)
+                    probing {hash(key,i)=(h(key)+i)%7} 
+
+    How to handle clusteing problem wiht linear probing ?
+        (1)- quadratic probing      --> still problem of  SECONDARY clustering is still there. , it migh happen that it may not find empty slots even if there are.
+            = hash(key_i)=(h(key)+i^2) % m.
+            -> alpha <0.5  and m should be prime --=> if there 2 condition are there then QUADRATIC PROBING WORKS
+
+        (2)- double hashing 
+            = hash (key,i)=(h1(key)+i*h2(key))%m    
+*/

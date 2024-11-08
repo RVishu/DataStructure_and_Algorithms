@@ -1,0 +1,8 @@
+ARRAY:
+Store at continuos location
+
+they can be access by index which begins with 0;
+
+Advantages:
+(1) Random Acess - we can get item in O(1) time.
+(2) Cache Friendliness

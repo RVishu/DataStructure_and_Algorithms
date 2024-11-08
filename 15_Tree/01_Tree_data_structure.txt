@@ -1,0 +1,12 @@
+
+tree store data in herierchy fashion
+
+node
+root
+leaf
+child
+parent
+subtreee
+descendants
+ancestors
+degree - no. of children

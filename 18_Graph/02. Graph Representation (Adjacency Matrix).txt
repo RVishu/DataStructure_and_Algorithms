@@ -1,0 +1,31 @@
+ADJACENCY MATRIX
+    size of matrix = |v|*|v|
+    |v| -> number of vertices
+
+    for undirected GRAPH
+        - it is symmetric matrix
+
+mat[i][j]=         1  - if there is an edge from vertex i to vertex j
+                   0  - otherwise
+
+
+HOW TO HANDLE VERTICES WITH ARBITARY NAMES ?
+    - an array of strings
+
+
+    for efficient implementation,
+
+    one hash table h would also be required to do reverse mapping                    
+
+
+  Properties of Adjacency matrix
+  representation
+
+  Space Required = theta(v*v)
+
+  Operations:
+    check if u and v  are adjacent : theta(1)
+    find all vertices adjacent to u : theta(v)
+    find degree of u : theta(v)
+    Add/Remove on Edge :  theta(1)
+    Add/Remove a Vertex : theta(v2)

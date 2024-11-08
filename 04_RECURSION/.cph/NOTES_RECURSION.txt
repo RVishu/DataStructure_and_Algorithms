@@ -1,0 +1,5 @@
+07
+tail recursion - a recursive function is called tail recursive when the parent function
+                 has nothing more to do when child function is finished.
+
+                 bcz the caller doesnt need to save the stack; 

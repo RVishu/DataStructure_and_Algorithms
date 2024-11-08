@@ -1,0 +1,25 @@
+BINARY HEAP
+
+- used in heapsort
+-used to implement priority queue
+
+->two ways
+        -min heap(highest priority items is assigned lowest value)
+
+        -max heap (highest priority item is assigned highest value)
+
+
+BINARY HEAP is a complete Binary Tree(Stored as an array)- if last row is filled from left to right , (there should no gap)
+
+ left(i)=2i+1
+
+ right(i)=2i+2
+
+parent(i)=[i-1/2]
+
+
+
+// MIN HEAP 
+    -complete Binary Tree
+
+    - every node has value smaller thhan its Descendent

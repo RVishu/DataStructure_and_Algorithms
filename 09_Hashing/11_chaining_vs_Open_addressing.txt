@@ -1,0 +1,12 @@
+CHAINING  --> it better handle collision
+    - hash table never fills
+    - less senstive to hash function
+    - poor cache performance
+    - extra space for links
+
+
+OPEN ADDRESSING
+    - table may become full and resizing becomes mandatory
+    - extra care required for clustering
+    - cache friendly
+    - extra space might be needed to achieve same performance as chaining.

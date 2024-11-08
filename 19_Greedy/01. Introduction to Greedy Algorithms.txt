@@ -1,0 +1,61 @@
+They are mainly useful for Optimization problem
+Optimization Problem == Maximising or Minimizing Someathing
+    e.g ->shortest path or Longest path problem
+
+PAY some amount using min. number of coins        
+
+
+int minCoins(int coins[],int n,int amount)
+{
+    1- sort the coins[] in Decreasing Order
+    2-int res=0;
+
+    3- for(int i=0;i<n;i++)
+    {
+        if(coins[i]<=amount)
+        {
+            int c = floor(amount/coins[i]);
+            res= res+c;
+            amount= amount-c*coins[i];
+        }
+        if(amount==0)
+            break;
+    }
+}
+
+
+GENERALL STRUCTURE
+
+getOptimal(item arr[],int n)
+
+    1- initialize : res=0;
+    2- while(all items are not considered)
+        {
+            i= selecAnItem()
+            if(feasible(i))
+                res=res+i;
+        }
+    3- return res        
+
+
+
+
+GREEDY ALGORITHMS MAY NOT WORK ALWAYS   
+    e.g : coins[]={18,1,10}
+        amount = 20 --> greedy solution = 3 coins (18,1,1)
+                        real solution = 2 coins(10,10)
+
+
+
+APPLICATIONS:
+    -> fINDING OPTIMAL SOLUTIONS
+        - activity selection
+        - fractional knapsack
+        - job sequence
+        - prim's Algorithm 
+        - kruskal 's Algorithm
+        - Dijkstra's Algorithm
+        - Huffman Coding
+
+    -> Finding close to optimal solution's for 
+        NP hard problem like travelling salesman problem.

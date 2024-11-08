@@ -1,0 +1,24 @@
+//  universe of keys --> HASH FUNCTIO --> SMALL VALUES
+
+/*
+How Hash Function Work ?
+    - should always map a large key to same small
+    -should generate values from 0 to m-1
+    - should be fast, O(1) for integer and O(ln) for string of length "ln".
+    -should uniformly distribute large keys into hash table
+
+*/
+
+/*
+EXAMPLE HASH FUNCTIONS
+
+1- h(large_key)=large_key % m   // here m should be small prime no. which are not close to powers
+
+2- for strings, weighted sum
+str[]="abcd"
+
+(str[0]*x^0 + str[1]*x^1 + str[2]*x^2)%m
+3- Universal hashing
+
+*/
+

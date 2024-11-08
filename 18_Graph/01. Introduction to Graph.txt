@@ -1,0 +1,34 @@
+GRAPH
+    - Vertices {v1,v2,v3,v4,v5}
+    - Edges
+
+
+DIRECTED VS UNDIRECTED GRAPH
+
+UNDIRECTED GRAPH
+    - DEGREE(v3) - degree of vertice is number of edges going through it.
+    - sum of degree = 2 *|E|
+    - maximum number of edges = (|v|*(|v|-1))/2
+                                                                                                                     
+DIRECTED GRAPH
+    - INDEGREE(V3)=1
+    - outdegree (v3)=2
+
+    -sum of indegrees = |E|
+    -sum of outdegrees = |E|
+
+    Maximum number of Edges = |v|*(|v|-1)  
+
+
+WALK (path) : V1 .V2 ,V4,V2
+
+PATH (simple path) : V1 ,V2 ,V4  (special walk wiht no repitation)
+
+CYCLIC: there exists a walk that begins 
+        and ends with same vertices.
+
+ACYCLIC      
+
+weighted 
+
+unweighted GRAPH

@@ -1,0 +1,38 @@
+ /*
+ detecting graph in a undirected graph is simpler problem
+
+ DFS BASED SOLUTION
+  problme is even with 2 elemetns , its adjacent is visited
+  
+ we maintain a PArent variable  so that the previous linear
+  element not count as cycle
+
+  so if vertex is visited but not a parent then it is a CYCLE
+  
+  */
+
+
+  DFSRec(adj,s,visited,parent)
+  {
+    visited[s]=true;
+    for every adjacent u of s 
+    {
+        if(visited[u]==false)
+            if(DFSRec(adj,u,visited,s)==true)
+                return true;
+            else if(u!=parent)
+                return true;
+
+    }
+    return false;
+  }
+
+  DFS(adj,V)
+  {
+    visited[v]={false,false,false,...false}
+    for(int i=0;i<V;i++)
+        if(visited[i]==false)
+            if(DFSRec(adj,i,visited,-1)==true)
+                return true;
+    return false;    
+  }

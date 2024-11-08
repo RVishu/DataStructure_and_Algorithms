@@ -1,0 +1,18 @@
+/*
+
+
+it is mainly used to implement dictionaries-> where we have key value pairs
+it is also used to implement sets of keys
+-> it provides SEARCH ,INSERT, DELETE  in O(1 ) on Average
+-> in hashing or hash table we always have unique values
+
+=>> Not useful for 
+    1-finding closest value   /
+    2-sorted data
+    3-prefix searching (HASHIG DOES EXACTLY SEARCH)
+
+    for 1 and 2 we will use AVL TREE or RED BLACK TREE
+    for 3 there is TRIE data structure
+
+    
+*/

@@ -1,0 +1,9 @@
+ application of stack
+
+    - fuction call
+    - checking for balance paranthesis
+    - revesing items
+    - infix to prefix/postfix
+    - evaluation of postfix/prefix
+    - stock span problem and its variations - INTERVIEW PROBLEM
+    - undo/refo or forward/backward

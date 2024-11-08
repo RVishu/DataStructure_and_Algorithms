@@ -1,0 +1,4 @@
+    the idea is to drop the contigous memory requirement so that insertion,deletion can 
+cann efficiently happen at the middle also.
+
+and No need to pre-allocate the space(No extra Nodes)

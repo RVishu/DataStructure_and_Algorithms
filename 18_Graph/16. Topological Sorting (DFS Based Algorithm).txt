@@ -1,0 +1,16 @@
+1- Create an Empty stack st
+2- for every vertex u , do following 
+    if(u is not visited)
+        DFS(u,st)
+3-while(st is not empty)
+    pop an item from st and print it
+
+
+DFS(u,st)
+    1-mark u as visited
+    2-for every adjacent v of using
+        if(v is not visited)
+            DFS(v,st)
+    3-push u to st            
+
+    //O(V+E)

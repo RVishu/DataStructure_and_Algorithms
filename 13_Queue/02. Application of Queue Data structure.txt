@@ -1,0 +1,7 @@
+Application of queue
+
+    - single resource and multiple consumer
+    - synchronization b/w slow and fast devices
+    - In Operating System(Semaphores,FCFS Scheduling , Spooling , Buffer for devices like keyboard)
+    - In computer Network (Routers/switches and mail queue)
+    - variation : Deque ,Priority Queue Doubly ended priority queue

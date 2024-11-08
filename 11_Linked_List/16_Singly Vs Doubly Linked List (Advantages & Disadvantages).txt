@@ -1,0 +1,11 @@
+SINGLY vs DOUBLY LINKED LISTS
+
+ADVANTAGES(doubly Linked List)
+    -can be traversed in both direction.
+    -a given delete a node in O(1) time with given reference/pointer to it.
+    -insert/delete before a given node
+    -insert/delete from both ends in O(1) time by maintaining tail.
+
+DISADVANTAGES (doubly Linked List)
+    - extra space for prev.
+    - code becomes more complex.    

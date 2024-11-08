@@ -1,0 +1,5 @@
+  1- cycle detection
+  2-topological sorting
+  3-Strongly connected components
+  4-solving maze and similar puzzles
+  5-Path Finding

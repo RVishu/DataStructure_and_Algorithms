@@ -1,0 +1,29 @@
+queue == FIFO  (first IN First Out)
+
+ Deques() <--  10,15,20,25 <--Enqueue()
+
+ //Pseudo Codes
+
+ queue q       // creating an empty queue
+
+ q.Enqueue(10)
+ q.Enqueue(20)
+ q.Enqueue(30)
+ q.Enqueue(40)
+ cout<<q.Deques()
+ cout<<q.Deques()
+ cout<<q.getFront()
+ cout<<q.getRear()  
+
+
+ Enqueue()
+
+ dequeue()
+
+ getFront()
+
+ getRear()
+
+ size()
+
+ isEmpty()

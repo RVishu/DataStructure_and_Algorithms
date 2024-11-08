@@ -1,0 +1,27 @@
+simple solution:
+    use adjacency list or adjacey matrix represenatation.
+
+    adjacency List : make friends() and areFriends() are O(n)
+
+    adjacency Matric : makeFriends() is theta(n) and areFriends is thata(1)
+
+DISJOINT - No 2 subsets have anything in Common
+
+find(x): return a represenatative of x's set (or Social Network)
+
+union(x,y): combine sets of x and y (same as makeFriends() )
+
+boolean areFriends(x,y)
+{
+    return (find(x)==find(y));
+}
+
+
+makeFriends(x,y)
+{
+    union(x,y);
+}
+
+in disjoint set there is a disjoint set represenatative
+{0,1,2,3}
+so if we call for any of 0,1,2,3 we'll get 0 bcz 0 is their disjoint set represenatative
